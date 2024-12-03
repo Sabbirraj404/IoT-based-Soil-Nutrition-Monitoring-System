@@ -45,9 +45,7 @@ void loop() {
   byte receivedData[19];
   digitalWrite(DE, HIGH);
   digitalWrite(RE, HIGH);
-
   mySerial.write(queryData, sizeof(queryData));  // send query data to NPK
-
   digitalWrite(DE, LOW);
   digitalWrite(RE, LOW);
   delay(1000);
